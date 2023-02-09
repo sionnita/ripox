@@ -1,0 +1,166 @@
+:root {
+	--grey: #F4F2FF;
+	--dark-grey: #B7B7B7;
+
+	--green: #23AE00;
+	--light-green: #BDFFAC;
+
+	--red: #FE2727;
+	--light-red: #FFD2D2;
+
+	--toska-cerah: #00cccc;
+	--toska: #008b8b;
+
+	--bs: #AECFFF;
+	--text: #9B9B9B;
+
+    --gelap-1: #101010;
+    --gelap-2: #151515;
+    --gelap-3: #202020;
+    --gelap-4: #252525;
+    --gelap-5: #303030;
+    --gelap-6: #353535;
+    --gelap-7: #404040;
+    --gelap-8: #454545;
+    --gelap-9: #505050;
+
+  --abu-abu-1: #cccccc;
+
+  --putih: #ffffff;
+}
+body {
+    background-color: var(--gelap-1);
+}
+.images {
+    display: flex;
+    width: 100%;
+    transition: 1s;
+}
+.images img {
+    width: 100%;
+}
+.wrapper {
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.tbl-kembali span {
+    margin-right: 20px;
+}
+.tbl-kembali a {
+    font-size: 25px;
+    color: var(--putih);
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+#slide-1:target ~ .images {
+    margin-left: 0px;
+}
+#slide-2:target ~ .images {
+    margin-left: -100%;
+}
+#slide-3:target ~ .images {
+    margin-left: -200%;
+}
+#slide-4:target ~ .images {
+    margin-left: -300%;
+}
+#slide-5:target ~ .images {
+    margin-left: -400%;
+}
+.navigasi a {
+    display: inline-block;
+    height: 18px;
+    width: 60px;
+    background-color: var(--putih);
+    font-size: 0px;
+    border-radius: 25px;
+    margin: 3px;
+    transition: 0.3s;
+}
+.navigasi a:hover {
+    background-color: var(--toska);
+    transition: 0.3s;
+}
+.navigasi {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.detail {
+    color: var(--putih);
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.detail .judul p{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 100%;
+    font-family: 'Quicksand';
+}
+.detail p {
+    margin-right: 30px;
+    font-family: 'Roboto';
+}
+.detail .harga p {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-size: 25px;
+    margin-top: -20px;
+}
+.detail .harga button {
+    margin-left: 10px;
+    border: none;
+    padding: 5px;
+    color: var(--putih);
+    font-family: 'Jost';
+    background-color: var(--toska);
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.25s;
+}
+.detail .harga button:hover {
+    background-color: var(--gelap-8);
+    color: rgb(255, 255, 255);
+    transition: 0.25s;
+}
+.detail .deskripsi-akun h2 {
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+    .wrapper {
+        width: 90%;
+    }
+    .navigasi a {
+        height: 15px;
+        width: 45px;
+        margin: 2px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .detail .harga p {
+        font-size: 20px;
+    }
+    .detail .harga button {
+        font-size: 15px;
+        width: 100px;
+    }
+    .tbl-kembali span {
+        margin-right: 10px;
+    }
+    .tbl-kembali span, .tbl-kembali a {
+        font-size: 20px;
+    }
+}

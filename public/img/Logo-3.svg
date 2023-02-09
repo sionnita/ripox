@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="200mm"
+   viewBox="0 0 199.99999 200"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="Logo-3.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="0.35355339"
+     inkscape:cx="702.86414"
+     inkscape:cy="579.82756"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       id="91"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#008b8b;stop-opacity:1;"
+         offset="0"
+         id="stop912" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect115"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#91"
+       id="linearGradient7437"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-8.8639157e-5,0.96431831,0.81668639,1.0461031e-4,-8.2366429,57.191489)"
+       x1="75.499062"
+       y1="151.55325"
+       x2="176.53458"
+       y2="151.55325" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(42.895153,-19.391709)"
+     sodipodi:insensitive="true"
+     style="display:inline">
+    <g
+       id="g28502"
+       transform="rotate(35.726354,236.3576,44.195779)">
+      <path
+         id="rect7431"
+         style="fill:#008b8b;fill-opacity:0;stroke:url(#linearGradient7437);stroke-width:8;stroke-miterlimit:50;stroke-dasharray:none;paint-order:fill markers stroke"
+         d="m 156.78437,138.54461 -0.007,88.90362 -82.130996,-0.0109 z" />
+      <rect
+         style="fill:#f68b8b;fill-opacity:0;stroke:#008b8b;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:50;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect9937"
+         width="32.146877"
+         height="13.416256"
+         x="124.53017"
+         y="227.48547" />
+      <rect
+         style="fill:#f68b8b;fill-opacity:0;stroke:#008b8b;stroke-width:8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:50;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="rect11293"
+         width="63.610146"
+         height="50.988979"
+         x="124.53016"
+         y="176.4969" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.5556px;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;display:none;fill:#ffffff;fill-opacity:1;stroke:#008b8b;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:50;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       x="150.18034"
+       y="144.09306"
+       id="text26660"><tspan
+         sodipodi:role="line"
+         id="tspan26658"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:70.5556px;font-family:Audiowide;-inkscape-font-specification:'Audiowide, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke-width:0;stroke-dasharray:none"
+         x="150.18034"
+         y="144.09306">RIPOX STORE</tspan></text>
+  </g>
+</svg>

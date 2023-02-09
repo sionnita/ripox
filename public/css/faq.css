@@ -1,0 +1,93 @@
+:root {
+    --gelap-1: #101010;
+    --gelap-2: #151515;
+    --gelap-3: #202020;
+    --gelap-4: #252525;
+    --gelap-5: #303030;
+    --gelap-6: #353535;
+    --gelap-7: #404040;
+    --gelap-8: #454545;
+    --gelap-9: #505050;
+    --toska : #008b8b;
+
+  --abu-abu-1: #cccccc;
+
+  --putih: #ffffff;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gelap-1);
+}
+.logo img{
+    width: 50px;
+    margin-right: 10px;
+}
+.faq-heading{
+    color: var(--putih);
+    text-decoration: none;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    color: var(--putih);
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.faq-page:hover {
+    background-color: var(--gelap-5);
+}
+.active {
+    background-color: var(--gelap-3);
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: var(--gelap-1);
+    display: none;
+    overflow: hidden;
+    color: var(--putih);
+}
+
+.faq-page:after {
+    content: '\2228';
+    /* Unicode character for "minus" sign (-) */
+    font-size: 20px;
+    color: var(--putih);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: '\2227';
+    /* Unicode character for "minus" sign (-) */
+}
