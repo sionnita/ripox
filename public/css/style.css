@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Jost:wght@100;200;300;400;500&family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500&display=swap');
 *,
 *::before,
 *::after {
@@ -72,15 +73,16 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 8px;
     color: #fff;
     background-color: #202020;
-    min-height: 5rem
+    min-height: 5rem;
 }
 
 .header__nav .logo a {
     color: #fff;
     font-size: 20px;
+    font-family: "Audiowide";
 
 }
 .navbar-nav .nav-item button {
@@ -107,33 +109,31 @@ body {
 
 .header__nav .logo {
     display: flex;
-    align-items: center
+    align-items: center;
 }
 
 
 @media only screen and (max-width: 48em) {
-    .header__nav {
-        display: none
-    }
+
 }
 
 .banner {
     margin: 1rem 0 1rem;
     width: 101%;
     overflow-x: hidden;
-    max-height: 25vw
+    max-height: 25vw;
 }
 
 .banner__container {
     width: 100%;
     max-width: 74rem;
-    margin: auto
+    margin: auto;
 }
 
 .banner__slide {
     width: 100%;
     overflow: hidden;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .banner__img {
@@ -180,7 +180,9 @@ body {
 }
 
 .category__product-container {
-    text-decoration: none
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
 .category__product-img {
@@ -297,7 +299,7 @@ body {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     text-align: center;
-    color: #464646
+    color: var(--putih);
 }
 
 .footer__container {
@@ -392,7 +394,7 @@ body {
 
 .footer .support__text {
     font-size: 1.3rem;
-    color: #000;
+    color: #fff;
     font-family: 'Roboto';
 }
 
@@ -403,8 +405,7 @@ body {
 .footer .support__img {
     display: block;
     width: 2.6rem;
-    -webkit-filter: brightness(0);
-    filter: brightness(0)
+    filter: brightness(100%);
 }
 
 .footer .country {
@@ -430,7 +431,7 @@ body {
 .footer .social,
 .footer .support,
 .footer .country {
-    background-color: var(--toska-cerah);
+    background-color: var(--gelap-5);
     padding: 1.5rem 1.3rem;
     text-align: center
 }
@@ -451,7 +452,7 @@ body {
     text-decoration: none;
     font-size: 1.5rem;
     padding: 0.5rem 0;
-    color: var(--putih)
+    color: var(--toska-cerah)
 }
 
 .footer .legal-content__text:hover {
@@ -460,7 +461,7 @@ body {
 
 .footer .legal-content__copyright {
     font-size: 1.5rem;
-    color: var(--putih);
+    color: var(--toska-cerah);
     padding: 1.5rem 0;
     font-weight: 'Roboto';
 }

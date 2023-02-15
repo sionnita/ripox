@@ -32,7 +32,7 @@
                 <div class="legal-content">
                     <a href="#" class="legal-content__text">Syarat & Ketentuan</a>
                     <a href="#" class="legal-content__text">Kebijakan Privasi</a>
-                    <p class="legal-content__copyright">&copy; Hak Cipta Ripox Payments</p>
+                    <p class="legal-content__copyright">&copy; 2023 Ripox Store</p>
                 </div>
             </section>
         </div>

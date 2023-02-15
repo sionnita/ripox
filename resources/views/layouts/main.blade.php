@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./vendor/slick/slick-theme.css">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="img/Logo-3.svg " type="image/x-icon">
-    <title>TopUp-Ripox</title>
+    <title>Ripox Store</title>
 </head>
 
 <body>
