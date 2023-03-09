@@ -32,3 +32,7 @@ Route::get('/detail', function () {
 Route::get('/faq', function () {
     return view('faq');
 });
+
+Route::get('/pembayaran', function () {
+    return view('pembayaran');
+});

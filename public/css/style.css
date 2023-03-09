@@ -676,6 +676,7 @@ select {
     background-color: black;
     margin-top: 20px;
 }
+
 .side-topup {
     padding: 20px;
 }
@@ -683,6 +684,12 @@ select {
     color: white;
     font-size: 14px;
 }
+
+.text-side-bayar {
+    color: white;
+    font-size: 20px;
+}
+
 .form-topup{
     margin-right: 20px;
 }
@@ -747,4 +754,16 @@ select {
 .modal-title {
     background-color: black;color:white;
     text-align: center; font-size: 16px; padding-top: 10px;padding-bottom: 10px
+}
+
+.form-bayar{
+    margin-right: 20px;
+}
+
+.card-bayar {
+    background-color: black;
+    margin-top: 20px;
+    height: 70vh;
+    padding: 20px;
+    border-radius: 10px;
 }
