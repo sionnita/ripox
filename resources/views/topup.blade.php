@@ -3,7 +3,7 @@
 <section class="topup category--1">
     <div class="topup__container" style="margin-left: 20px;margin-right: 20px">
         <div class="row">
-            <div class="col-5">
+            <div class="col-lg-5 col-sm-12">
                 <div class="side-topup">
                 <img src="{{asset('img/banner/benner1.png')}}" style="height: auto; width: 100%; border-radius: 15px"/>
                     <h1 style="margin-top:20px; margin-bottom: 20px">Mobile Legends</h1>
@@ -18,7 +18,7 @@
                        <p class="text-side"> Setelah pembayaran berhasil, diamond akan langsung terkirim ke akun MLBB-mu, Happy topup.</p>
                 </div>
             </div>
-            <div class="col-7">
+            <div class="col-lg-7  col-sm-12">
             <form class="form-topup">
                 <div class="card card-topup">
                     <div class="card-body">

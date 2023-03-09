@@ -1,5 +1,5 @@
 <header class="header">
-    <nav  class="navbar navbar-expand-lg ">
+    <nav  class="navbar ">
         <div class="header__container container-fluid">
             <div class="header__nav">
                 <div class="logo">
