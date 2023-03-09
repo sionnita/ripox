@@ -5,13 +5,13 @@
                 <div class="social">
                     <h5 class="social__title">Dapatkan berita Ripox di:</h5>
                     <div class="social__content">
-                        <a href="#" class="social__link">
+                        <a href="https://www.facebook.com/mrifrd.mrifrd " class="social__link">
                             <img src="./img/socmed/socmed-facebook-H36.png" class="social__icon" alt="">
                         </a>
-                        <a href="#" class="social__link">
+                        <a href="https://youtube.com/@muhammadrifqifirdaus7415" class="social__link">
                             <img src="./img/socmed/socmed-youtube-H36.png" class="social__icon" alt="">
                         </a>
-                        <a href="#" class="social__link">
+                        <a href="https://instagram.com/mrifrd_?igshid=YmMyMTA2M2Y=" class="social__link">
                             <img src="./img/socmed/socmed-instagram-H36.png" class="social__icon" alt="">
                         </a>
                     </div>

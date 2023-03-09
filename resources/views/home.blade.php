@@ -34,7 +34,7 @@
                   <img src="./img/game/freefire_tile.jpg" class="category__product-img" alt="">
                   <p class="category__product-title">Free Fire</p>
                </a>
-               <a href="#" class="category__product-container">
+               <a href="https://www.midasbuy.com/midasbuy/id/buy?appid=1450015065" class="category__product-container">
                   <img src="./img/game/PUBG_RPS11_tile.jpg" class="category__product-img" alt="">
                   <p class="category__product-title">PUBG Mobile</p>
                </a>
