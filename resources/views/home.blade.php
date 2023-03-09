@@ -24,7 +24,7 @@
       <!-- Category 1 Category Popular -->
       <section class="category category--1">
          <div class="category__container">
-            <h1 class="category__title">TopUp Game </h1>
+            <h1 class="category__title">Top Up Game </h1>
             <div class="category__product">
                <a href="/topup" class="category__product-container">
                   <img src="./img/game/mlbb_tile.jpg" class="category__product-img" alt="">
