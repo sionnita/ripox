@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,13 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/topup', function () {
-    return view('topup');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/topup/{id}', [HomeController::class, 'topup'])->name('topup');
 
 Route::get('/akungame', function () {
     return view('akungame');

@@ -13,11 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('table_list_game', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->string('deskripsi');
-            $table->timestamps();
+        //
+        Schema::table('list_games', function (Blueprint $table) {
+            $table->string('image_tile')->after('image');
         });
     }
 
@@ -28,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_list_game');
+        //
     }
 };

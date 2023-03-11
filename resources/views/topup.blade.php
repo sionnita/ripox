@@ -5,17 +5,9 @@
         <div class="row">
             <div class="col-lg-5 col-sm-12">
                 <div class="side-topup">
-                <img src="{{asset('img/banner/benner1.png')}}" style="height: auto; width: 100%; border-radius: 15px"/>
-                    <h1 style="margin-top:20px; margin-bottom: 20px">Mobile Legends</h1>
-                    <p class="text-side">Beli diamond Mobile Legends jadi mudah, aman, dan praktis di RipoxStore.
-                        Cukup ikuti langkah mudah berikut, dan diamond akan langsung terkirim ke akun Mobile Legends-mu hanya dalam hitungan detik.</p>
-                    <ol>
-                        <li class="text-side">Masukan User ID Mobile Legends-mu.</li>
-                        <li class="text-side">Pilih jumlah diamond yang kamu inginkan.</li>
-                        <li class="text-side">Pilih cara pembayaran yang paling mudah untuk-mu.</li>
-                        <li class="text-side">Klik pada tombol "Beli" untuk menyelesaikan transaksi-mu.</li>
-                    </ol>
-                       <p class="text-side"> Setelah pembayaran berhasil, diamond akan langsung terkirim ke akun MLBB-mu, Happy topup.</p>
+                <img src="{{asset($topup -> image)}}" style="height: auto; width: 100%; border-radius: 15px"/>
+                    <h1 style="margin-top:20px; margin-bottom: 20px">{{$topup -> name}}</h1>
+                   {!! $topup -> deskripsi !!}
                 </div>
             </div>
             <div class="col-lg-7  col-sm-12">
