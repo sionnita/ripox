@@ -27,7 +27,7 @@
             <h1 class="category__title">Top Up Game </h1>
             <div class="category__product">
                @foreach($game as $games)
-               <a href="{{ $games -> id == 5 ? 'https://www.midasbuy.com/midasbuy/id/buy?appid=1450015065' : route('topup', $games -> id) }}" class="category__product-container">
+               <a href="{{ $games -> id == 5 ? 'https://www.midasbuy.com/midasbuy/id/buy?appid=1450015065' : route('topup.index', $games -> id) }}" class="category__product-container">
                   <img src="{{asset($games -> image_tile)}}" class="category__product-img" alt="">
                   <p class="category__product-title">{{$games -> name}}</p>
                </a>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ListGame;
+use App\Models\PaymentMethods;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -17,6 +18,7 @@ class HomeController extends Controller
 
     public function topup(Request $request, $id){
         $topup = ListGame::find($id);
-        return view('topup',compact('topup'));
+        $payment = PaymentMethods::get();
+        return view('topup',compact('topup','payment'));
     }
 }
