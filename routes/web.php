@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GameController;
+use App\Http\Controllers\AccountController;
+use App\Http\Controllers\Auth\LoginController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +23,8 @@ use App\Http\Controllers\GameController;
 // });
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
+Route::get('/login', [LoginController::class,'show'])->name('login.show');
+Route::post('/simpan-login', [LoginController::class,'login'])->name('login.perform');
 
 Route::group(['prefix' => 'topup', 'as' => 'topup.'], function () {
     Route::get('/{id}', [HomeController::class, 'topup'])->name('index');
@@ -27,9 +32,18 @@ Route::group(['prefix' => 'topup', 'as' => 'topup.'], function () {
     Route::post('/save', [GameController::class, 'save'])->name('save');
 });
 
-Route::get('/akungame', function () {
-    return view('akungame');
+Route::group(['prefix' => 'akun', 'as' => 'akun.'], function () {
+    Route::get('/{id}', [HomeController::class, 'akun'])->name('index');
+    Route::get('/detail/{id}', [HomeController::class, 'akunDetail'])->name('detail');
+    Route::get('/beli/{id}', [HomeController::class, 'akunBeli'])->name('beli');
+    Route::post('/save', [AccountController::class, 'save'])->name('save');
 });
+
+Route::get('/logout', [LoginController::class,'logout'])->name('logout');
+
+// Route::get('/akungame', function () {
+//     return view('akungame');
+// });
 
 Route::get('/detail', function () {
     return view('detail');

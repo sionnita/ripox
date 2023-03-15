@@ -768,3 +768,34 @@ select {
     padding: 20px;
     border-radius: 10px;
 }
+
+
+.deskripsi-akun{
+    color:white;
+    padding: 20px;
+}
+.card-akun {
+    background-color: black;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card-akun .card__title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-bottom: 0.1rem
+}
+
+.akun__container{
+    align-items: center;
+
+}
+
+.form-akun{
+    margin-top: 15px;
+}
+
+.label-akun{
+    font-size: 14px;
+    color:white;
+}

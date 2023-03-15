@@ -17,16 +17,52 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="img/Logo-3.svg " type="image/x-icon">
     <title>Ripox Store</title>
-    
-@yield('css')
 </head>
 
-<body>
-<!-- Header -->
-@include('layouts.header')
-<!-- topup -->
-@yield('content')
 
+<body>
+    <header class="header">
+        <nav  class="navbar ">
+            <div class="header__container">
+                <div class="header__nav">
+                    <div class="logo">
+    
+                        <img src="{{asset('/img/Logo-3.svg')}}" width="60px" class="logo__img" alt="logo">
+                        <a href="/" class="text-decoration-none">RIPOX STORE</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="topup category--1" style="justify-content: center;">
+        <div style=" display: flex;
+        justify-content: center;
+        flex-direction: row;">
+        <div class="card card-topup col-lg-4"style="padding:20px;">
+            <div class="card-body">
+                <form method="post" action="{{ route('login.perform') }}">
+                    
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}" />
+                 
+                    <h1 style="margin-bottom: 20px; text-align:center;">Login Admin</h1>
+
+                    @include('layouts.alert')
+
+                    <div class="input-group col" style="margin-bottom:20px;">
+                        <input type="text" class="form-control" placeholder="Username" name="username">
+                    </div>
+                    
+                    <div class="input-group col" style="margin-bottom:20px;">
+                        <input type="password" class="form-control" placeholder="Password" name="password">
+                    </div>
+
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+                </form>
+    
+            </div>
+        </div>
+        </div>
+    </section>
 <br><br><br><br>
 <!-- Footer -->
 @include('layouts.footer')
