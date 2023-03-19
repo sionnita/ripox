@@ -50,6 +50,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::post('/save', [AdminController::class, 'saveAkun'])->name('save');
         Route::get('/status/{id}', [AdminController::class, 'statusAkun'])->name('status');
         Route::post('/edit', [AdminController::class, 'editAkun'])->name('edit');
+        Route::get('/bayar/{id}', [AdminController::class, 'bayarAkun'])->name('bayar');
+        Route::get('/cancel/{id}', [AdminController::class, 'cancelAkun'])->name('cancel');
     });
     Route::group(['prefix' => 'topup', 'as' => 'topup.'], function () {
         Route::get('/', [AdminController::class, 'viewTopup'])->name('view');
@@ -57,6 +59,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         Route::post('/save', [AdminController::class, 'saveTopup'])->name('save');
         Route::get('/status/{id}', [AdminController::class, 'statusTopup'])->name('status');
         Route::post('/edit', [AdminController::class, 'editTopup'])->name('edit');
+        Route::get('/bayar/{id}', [AdminController::class, 'bayarTopup'])->name('bayar');
+        Route::get('/cancel/{id}', [AdminController::class, 'cancelTopup'])->name('cancel');
     });
 });
 

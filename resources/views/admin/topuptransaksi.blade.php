@@ -40,6 +40,7 @@
                                           <th class="text-right">Admin</th>
                                           <th class="text-right">Total</th>
                                           <th class="text-center">Status</th>
+                                          <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -64,7 +65,14 @@
                                                 <span class="badge rounded-pill badge-soft-info" data-key="t-hot"> {{$value->status}}</span>
                                                 @endif
                                               </td>
-                                              
+                                              <td class="text-center">
+                                                @if($value -> status == "new")
+                                                  <a type="button" class="btn-success btn-sm"
+                                                  style="font-size: 18px;color: white;font-size:12px;" href="{{route('admin.topup.bayar', $value -> id)}}">Sudah Bayar</button>
+                                                  <a type="button" class="btn-danger btn-sm"
+                                                  style="font-size: 18px;color: white;font-size:12px;" href="{{route('admin.topup.cancel', $value -> id)}}">Cancel</button>
+                                                @endif
+                                              </td>
                                             </tr>
                                         @empty
                                           <tr>

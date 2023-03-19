@@ -58,15 +58,15 @@
                                                 @elseif($value -> status == "bayar")
                                                 <span class="badge rounded-pill badge-soft-success" data-key="t-hot"> {{$value->status}}</span>
                                                 @else
-                                                <span class="badge rounded-pill badge-soft-info" data-key="t-hot"> {{$value->status}}</span>
+                                                <span class="badge rounded-pill badge-soft-danger" data-key="t-hot"> {{$value->status}}</span>
                                                 @endif
                                               </td>
                                               <td class="text-center">
                                                 @if($value -> status == "new")
                                                   <a type="button" class="btn-success btn-sm"
-                                                  style="font-size: 18px;color: white;font-size:12px;" href="{{route('admin.akun.status', $value -> id)}}">Sudah Bayar</button>
-                                                  <a type="button" class="btn-success btn-sm"
-                                                  style="font-size: 18px;color: white;font-size:12px;" href="{{route('admin.akun.status', $value -> id)}}">Cancel</button>
+                                                  style="font-size: 18px;color: white;font-size:12px;" href="{{route('admin.akun.bayar', $value -> id)}}">Sudah Bayar</button>
+                                                  <a type="button" class="btn-danger btn-sm"
+                                                  style="font-size: 18px;color: white;font-size:12px;" href="{{route('admin.akun.cancel', $value -> id)}}">Cancel</button>
                                                 @endif
                                               </td>
                                               

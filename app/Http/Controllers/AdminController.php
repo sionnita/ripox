@@ -214,4 +214,79 @@ class AdminController extends Controller
         $request->session()->flash('success', 'Sukses');
         return redirect()->back();
     }
+
+    public function bayarAkun(Request $request, $id){
+        $account = AccountTransactions::where('id',$id)
+                    -> where("status","new")
+                    ->first();
+        if($account){
+            $account -> status = "bayar";
+            $account -> save();
+
+            $request->session()->flash('success', 'Sukses');
+            return redirect()->back();
+        }else{
+            $request->session()->flash('failed', 'Data Tidak ditemukan');
+            return redirect()->back(); 
+        }
+
+        // return view('admin.akuntransaksi',compact('account'))->with('i', (request()->input('page', 1) - 1) * 20);
+    }
+
+    public function cancelAkun(Request $request, $id){
+        $account = AccountTransactions::where('id',$id)
+                    -> where("status","new")
+                    ->first();
+        if($account){
+            $account -> status = "cancel";
+            $account -> save();
+            
+            $request->session()->flash('success', 'Sukses');
+            return redirect()->back();
+        }else{
+            $request->session()->flash('failed', 'Data Tidak ditemukan');
+            return redirect()->back(); 
+        }
+
+        // return view('admin.akuntransaksi',compact('account'))->with('i', (request()->input('page', 1) - 1) * 20);
+    }
+
+    public function bayarTopup(Request $request, $id){
+        $account = TopupTransactions::where('id',$id)
+                    -> where("status","new")
+                    ->first();
+        if($account){
+            $account -> status = "bayar";
+            $account -> save();
+
+            $request->session()->flash('success', 'Sukses');
+            return redirect()->back();
+        }else{
+            $request->session()->flash('failed', 'Data Tidak ditemukan');
+            return redirect()->back(); 
+        }
+
+        // return view('admin.akuntransaksi',compact('account'))->with('i', (request()->input('page', 1) - 1) * 20);
+    }
+
+    public function cancelTopup(Request $request, $id){
+        $account = TopupTransactions::where('id',$id)
+                    -> where("status","new")
+                    ->first();
+        if($account){
+            $account -> status = "cancel";
+            $account -> save();
+            
+            $request->session()->flash('success', 'Sukses');
+            return redirect()->back();
+        }else{
+            $request->session()->flash('failed', 'Data Tidak ditemukan');
+            return redirect()->back(); 
+        }
+
+        // return view('admin.akuntransaksi',compact('account'))->with('i', (request()->input('page', 1) - 1) * 20);
+    }
+
+    
+    
 }
