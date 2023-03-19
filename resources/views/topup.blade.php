@@ -16,7 +16,7 @@
                 <div class="card card-topup">
                     <div class="card-body">
                         <h2 style="color:white;margin-bottom: 15px;"><span class="badge badge-light" style="color: black">1.</span> MASUKKAN ID GAME</h2>
-                        <p style="font-size: 12px;color: white;">Silahkan isi dengan format gabungan ID dan nomor server, contoh: 12345678 (1234)</p>
+                        <p style="font-size: 12px;color: white;">Silahkan isi dengan format gabungan ID dan nomor server, contoh: 12345678 (1234) atau 12345678 (lokasi server), dan apabila tidak terdapat server tidak perlu diisi</p>
                         <div class="row">
                             <div class="input-group col">
                                 <input type="number" class="form-control" aria-label="Small" placeholder="ID {{$topup -> name}}"
@@ -65,7 +65,7 @@
                 </div>
                 <div class="card card-topup">
                     <div class="card-body">
-                        <h2 style="color:white;margin-bottom: 15px;"><span class="badge badge-light" style="color: black">4.</span> BELi</h2>
+                        <h2 style="color:white;margin-bottom: 15px;"><span class="badge badge-light" style="color: black">4.</span> BELI</h2>
 
                         <div id="pembayaran">
                             <p style="font-size: 12px;color: white;margin-left: 10px">Jika anda ingin mendapatkan bukti pembayaran, harap taruh alamat email anda</p>

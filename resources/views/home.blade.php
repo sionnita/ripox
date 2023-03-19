@@ -4,19 +4,19 @@
       <section class="banner">
          <div class="banner__container">
             <div class="banner__slide">
-               <img src="./img/banner/benner1.png" class="banner__img" alt="">
+               <img src="./img/banner/mlbanner.png" class="banner__img" alt="">
             </div>
             <div class="banner__slide">
-               <img src="./img/banner/benner2.png" class="banner__img" alt="">
+               <img src="./img/banner/ffbanner.png" class="banner__img" alt="">
             </div>
             <div class="banner__slide">
-               <img src="./img/banner/benner3.png" class="banner__img" alt="">
+               <img src="./img/banner/pubgbanner.png" class="banner__img" alt="">
             </div>
             <div class="banner__slide">
-               <img src="./img/banner/benner4.png" class="banner__img" alt="">
+               <img src="./img/banner/lolbanner.png" class="banner__img" alt="">
             </div>
             <div class="banner__slide">
-               <img src="./img/banner/benner5.png" class="banner__img" alt="">
+               <img src="./img/banner/gibanner.png" class="banner__img" alt="">
             </div>
          </div>
       </section>
