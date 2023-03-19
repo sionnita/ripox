@@ -38,6 +38,15 @@ class AccountController extends Controller
                     'status' => "new"
                 ]);
 
+                $details = [
+                    'title' => 'Pembayaran Ripox',
+                    'subject' => 'Pembayaran Ripox',
+                    'body' => 'Terimakasih atas pembelian anda, <br>'.$account -> name.
+                    '<br>Harga = '.$price.
+                    '<br>Silahkan kirim ke no rek 000000 <br>Terimakasih',
+                    'view' => 'email.myTestMail'
+                ];
+                \Mail::to($email)->send(new \App\Mail\MyMail($details));
         $request->session()->flash('success', 'Sukses');
         return redirect()->back();
     }

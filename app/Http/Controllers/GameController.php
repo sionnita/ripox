@@ -66,7 +66,22 @@ class GameController extends Controller
             'status' => "new"
         ]);
 
-        $request->session()->flash('success', 'Sukses');
+        $bayar = PaymentMethods::find($id_bayar);
+        $metode = $bayar -> name;
+
+        $details = [
+            'title' => 'Pembayaran Ripox',
+            'subject' => 'Pembayaran Ripox',
+            'body' => 'Terimakasih atas pembelian anda, <br>'.$topup -> game -> name.' '.
+            number_format($topup -> nominal).'<br>Harga = '.$price.'<br>Admin = '.$admin.'<br>Total = '.$total.
+            '<br>Silahkan kirim ke '.$metode.'<br>Terimakasih',
+            'view' => 'email.myTestMail'
+        ];
+        \Mail::to($email)->send(new \App\Mail\MyMail($details));
+
+        $request->session()->flash('success', 'Sukses, Silahkan cek email anda untuk melakukan pembayaran');
         return redirect()->back();
     }
+
+    
 }

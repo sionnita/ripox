@@ -24,7 +24,7 @@
 
                             </div>
                             <div class="input-group col">
-                                <input type="number" class="form-control" aria-label="Small" placeholder="Nomor Server" id="nomor-server">
+                                <input type="text" class="form-control" aria-label="Small" placeholder="Nomor Server" id="nomor-server">
 
                             </div>
                         </div>
@@ -232,23 +232,25 @@
 
     topup.forEach(function(item, index, arr){
         var t = document.getElementById("topup-"+item.id);
-        t.addEventListener('click', function(){
-            // console.log(id_topup);
-            if(id_topup != 0) {
-                var t_sebelum = document.getElementById("topup-" + id_topup);
-                t_sebelum.className = 'topup-nominal';
-            }
+        if(t){
+            t.addEventListener('click', function(){
+                // console.log(id_topup);
+                if(id_topup != 0) {
+                    var t_sebelum = document.getElementById("topup-" + id_topup);
+                    t_sebelum.className = 'topup-nominal';
+                }
 
-            t.className = 'topup-nominal-active';
-            cara_bayar(item.price);
-            id_topup = item.id;
-            nama_topup = item.type;
-            harga_topup = item.price;
+                t.className = 'topup-nominal-active';
+                cara_bayar(item.price);
+                id_topup = item.id;
+                nama_topup = item.type;
+                harga_topup = item.price;
 
-            if(id_topup != 0 && id_bayar != 0){
-                getTotal(id_topup, id_bayar);
-            }
-        });
+                if(id_topup != 0 && id_bayar != 0){
+                    getTotal(id_topup, id_bayar);
+                }
+            });
+        }
     })
 
     function cara_bayar(nominal){
