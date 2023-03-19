@@ -9,7 +9,7 @@
         @foreach($lists as $li)
         <div class="box">
             <div class="image">
-                <img src="{{$li -> image}}" alt="">
+                <img src="{{asset($li -> image)}}" alt="">
             </div>
             <div class="info">
                 <h3 class="judul">{{$li -> name}}</h3>
@@ -25,4 +25,5 @@
         </div>
         @endforeach
     </div>
+</div>
 @endsection

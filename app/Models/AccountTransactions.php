@@ -17,4 +17,9 @@ class AccountTransactions extends Model
         'price',
         'status'
     ];
+
+    public function list()
+	{
+		return $this->belongsTo(ListAccounts::class, 'account_id');
+	}
 }

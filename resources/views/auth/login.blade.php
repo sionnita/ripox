@@ -56,7 +56,7 @@
                         <input type="password" class="form-control" placeholder="Password" name="password">
                     </div>
 
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+                    <button class="w-100 btn btn-lg btn-blog header" type="submit" style="color:white">Login</button>
                 </form>
     
             </div>

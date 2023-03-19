@@ -20,4 +20,14 @@ class TopupTransactions extends Model
         'total',
         'status'
     ];
+
+    public function list()
+	{
+		return $this->belongsTo(NominalTopups::class, 'id_topup');
+	}
+
+    public function bayar()
+	{
+		return $this->belongsTo(PaymentMethods::class, 'id_bayar');
+	}
 }

@@ -37,7 +37,6 @@ class GameController extends Controller
             'popup_idbayar' => 'required',
             'popup_id' => 'required',
             'popup_metode' => 'required',
-            'popup_server' => 'required',
             'popup_idtopup' => 'required',
             'popup_email' => 'required|email',
             'popup_harga' => 'required',

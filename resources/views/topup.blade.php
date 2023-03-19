@@ -34,7 +34,7 @@
                     <div class="card-body">
                         <h2 style="color:white;margin-bottom: 15px;"><span class="badge badge-light" style="color: black">2.</span> PILIH NOMINAL TOP UP</h2>
                             <div class="row">
-                                @foreach($topup -> nominal as $nominal)
+                                @foreach($nominal as $nominal)
                                     <div class="topup-nominal" id="topup-{{$nominal->id}}">{{$nominal -> nominal}} {{$nominal -> type}}</div>
                                 @endforeach
                             <!-- <div class="topup-nominal" id="topup-2">5 Diamonds</div>
