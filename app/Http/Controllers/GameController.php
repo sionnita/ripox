@@ -74,7 +74,7 @@ class GameController extends Controller
             'subject' => 'Pembayaran Ripox',
             'body' => 'Terimakasih atas pembelian anda, <br>'.$topup -> game -> name.' '.
             number_format($topup -> nominal).'<br>Harga = '.$price.'<br>Admin = '.$admin.'<br>Total = '.$total.
-            '<br>Silahkan kirim ke '.$metode.'<br>Terimakasih',
+            '<br>Silahkan kirim ke '.$metode.'melalui Nomor:0895338076760','<br>Terimakasih',
             'view' => 'email.myTestMail'
         ];
         \Mail::to($email)->send(new \App\Mail\MyMail($details));

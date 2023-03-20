@@ -44,10 +44,11 @@ class AccountController extends Controller
                     'body' => 'Terimakasih atas pembelian anda, <br>'.$account -> name.
                     '<br>Harga = '.$price.
                     '<br>Silahkan kirim ke no rek 000000 <br>Terimakasih',
+                    '<br>Bila Ingin melakukan negosiasi akun silakan WhatsApp ke No:0895338076760',
                     'view' => 'email.myTestMail'
                 ];
                 \Mail::to($email)->send(new \App\Mail\MyMail($details));
-        $request->session()->flash('success', 'Sukses');
+        $request->session()->flash('success', 'Sukses, Silahkan cek email anda untuk melakukan pembayaran');
         return redirect()->back();
     }
 }
